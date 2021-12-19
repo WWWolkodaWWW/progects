@@ -1,0 +1,96 @@
+.logo-object {
+	&:hover {
+		filter: invert(71%) sepia(42%) saturate(759%) hue-rotate(39deg) brightness(87%) contrast(85%);
+		cursor: pointer;
+	}
+}
+
+.logo-object {
+	@include media-laptop {
+		height: 70px;
+	}
+
+	@include media-mobile-big-width {
+		height: 50px;
+	}
+}
+
+.ico {
+	&:hover {
+		filter: invert(71%) sepia(42%) saturate(759%) hue-rotate(39deg) brightness(87%) contrast(85%);
+	}
+
+	@include media-laptop {
+		height: 30px;
+	}
+}
+
+
+
+.skill-ico {
+	height: 30px;
+	padding-right: 15px;
+}
+
+// .progress-bar {
+// 	height: 10px;
+// 	background-color: $color-primary;
+// 	display: block;
+// 	margin-top: 5px;
+
+// 	&_value75 {
+// 		width: 75%;
+// 	}
+
+// 	&_value50 {
+// 		width: 50%;
+// 	}
+
+// 	&_value25 {
+// 		width: 25%;
+// 	}
+
+// 	&_value90 {
+// 		width: 90%;
+// 	}
+
+// 	&_value100 {
+// 		width: 100%;
+// 	}
+// }
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+.progress-bar {
+	height: 10px;
+	background-color: $color-primary;
+	display: block;
+	margin-top: 5px;
+
+	@include media-tablet {
+		height: 30px;
+	}
+
+	&::before {
+		@include progress-bar ($width: 100%, $index: 0);
+		background-color: $color-primary-light;
+
+		@include media-tablet {
+			@include progress-bar ($width: 100%, $height:30px, $index: 0);
+		}
+	}
+
+	
+}
+
+.contacts-ico {
+	height: 30px;
+
+	@include media-mobile-big-width {
+		height: 20px;
+	}
+}
+

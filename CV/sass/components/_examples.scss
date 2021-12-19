@@ -1,0 +1,7 @@
+.examples__wrapper {
+	padding-top: 60px;
+
+	@include media-laptop {
+		padding-top: 30px;
+	}
+}

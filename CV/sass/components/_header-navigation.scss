@@ -1,0 +1,21 @@
+.header-navigation {
+	&__list {
+		display: flex;
+		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
+
+		@include media-laptop {
+			display: none;
+		}
+	}
+
+	&__link {
+		color: $color-primary-light;
+		padding-left: 28px;
+
+		&:hover {
+			color: $color-additional;
+		}
+	}
+}
+
+
