@@ -36,7 +36,7 @@
 				position: absolute;
 				top: 0;
 				right: 0;
-				background-image: url(../../assets/svg/arrow.svg);
+				background-image: url(../assets/svg/arrow.svg);
 				background-repeat: no-repeat;
 				height: 15px;
 				width: 26px;
@@ -47,8 +47,10 @@
 }
 
 .header__navigation_mobile {
-	visibility: hidden;
-	transition: 0.3s all linear;
+	@include media-laptop {
+		visibility: hidden;
+		transition: 0.3s all linear;
+	}
 }
 
 // ._active {

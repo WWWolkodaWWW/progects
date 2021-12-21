@@ -38,12 +38,12 @@ function burgerMenu(selector) {
 		}
 	}
 
-	function hideNavigation() { 
-		overlay.addEventListener("click", () => {
-			navMobile.style.visibility = "hidden";
-			hideContent();
-		});
-	}
+	// function hideNavigation() { 
+	// 	overlay.addEventListener("click", () => {
+	// 		navMobile.style.visibility = "hidden";
+	// 		hideContent();
+	// 	});
+	// }
 }
 
 burgerMenu();
