@@ -53,6 +53,7 @@
 		margin-bottom: 10px;
 		width: calc(100vw - 468px);
 		min-width: 300px;
+		min-height: 300px;
 	}
 
 	&__description {
@@ -64,7 +65,7 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		justify-content: space-between;
+		justify-content: flex-end;
 		flex-grow: 1;
 		padding: 20px 10px 0 10px;
 	}
@@ -75,10 +76,7 @@
 	}
 }
 
-.project__image_circle {
-	width: 67%;
-	margin: 0 auto;
-}
+
 
 .slider {
 	background-color: $color-background-light;
@@ -150,6 +148,7 @@
 
 	&:hover {
 		background-color: $color-primary;
+		cursor: pointer;
 	}
 
 	&:active {

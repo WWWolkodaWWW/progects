@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="./assets/svg/favicon.ico">
-	<title>CV_stage_0</title>
+	<title>CV_Makarenko_Iuliia</title>
 	<link rel="stylesheet" href="./sass/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,32 +20,38 @@
 		<div class="wrapper">
 			<div class="header__wrapper">
 				<a href="#" class="logo" target="_blank">
-					<object data="./assets/svg/logoW.svg" type="image/svg+xml" class="logo-object"></object>
+					<img src="./assets/svg/logoW.svg" class="logo-object" alt="logo">
 				</a>
-				<nav class="header__navigation">
+				<nav class="header__navigation header__navigation_mobile">
 					<ul class="header-navigation__list">
-						<li class="header-navigation__link"><a href="#">Skills</a></li>
-						<li class="header-navigation__link"><a href="#">Languages</a></li>
-						<li class="header-navigation__link"><a href="#">Education</a></li>
-						<li class="header-navigation__link"><a href="#">Courses</a></li>
-						<li class="header-navigation__link"><a href="#">Experience</a></li>
-						<li class="header-navigation__link"><a href="#">Projects</a></li>
-						<li class="header-navigation__link"><a href="#">Contacts</a></li>
+						<li class="header-navigation__link"><a href="#skills">Skills</a></li>
+						<li class="header-navigation__link"><a href="#languages">Languages</a></li>
+						<li class="header-navigation__link"><a href="#education">Education</a></li>
+						<li class="header-navigation__link"><a href="#courses">Courses</a></li>
+						<li class="header-navigation__link"><a href="#experience">Experience</a></li>
+						<li class="header-navigation__link"><a href="#projects">Projects</a></li>
+						<li class="header-navigation__link"><a href="#contacts">Contacts</a></li>
 					</ul>
 				</nav>
+				<div class="humburger">
+					<span class="humburger__line humburger__line_first"></span>
+					<span class="humburger__line humburger__line_second"></span>
+					<span class="humburger__line humburger__line_third"></span>
+					<span class="humburger__line humburger__line_fourth"></span>
+				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="main">
 
-		<section class="about-me dark-style">
+		<section class="about-me dark-style" id="about-me">
 			<div class="wrapper about-me__wrapper layout-2-columns">
 				<div class="about-me__content">
 					<h1 class="about-me__title">Hello, <span class="about-me__name">I`m Iuliia Makarenko</span>. Graphic designer, illustrator and junior Front-End developer</h1>
 					<ul class="about-me-contacts">
 						<li class="contacts__link">
-							<a href="mailto:wwwolkodavvv@gmail.com"><img src="./assets/svg/mail.svg" alt="mail" class="ico about-me-ico"></a>
+							<a href="mailto:makarenko_iuliia@mail.ru"><img src="./assets/svg/mail.svg" alt="mail" class="ico about-me-ico"></a>
 						</li>
 						<li class="contacts__link">
 							<a href="tel:+48537187966"><img src="./assets/svg/tel.svg" alt="phone" class="ico about-me-ico"></a>
@@ -61,7 +67,7 @@
 	
 		<div class="parallax"></div>
 	
-		<section class="skills light-style">
+		<section class="skills light-style" id="skills">
 			<div class="wrapper">
 				<h2 class="skills__title">Skills</h2>
 				<div class="skills__wrapper">
@@ -114,7 +120,7 @@
 								<img src="./assets/img/ai.png" alt="Illustrator" class="ico skill-ico">
 								<span>Illustrator</span>
 							</div>
-							<span class="progress-bar0"></span>
+							<span class="progress-bar"></span>
 						</li>
 						<li class="skills-list__item">
 							<div class="skills-list__line">
@@ -156,7 +162,7 @@
 			</div> 
 		</section>
 
-		<section class="languages dark-style">
+		<section class="languages dark-style" id="languages">
 			<div class="wrapper">
 				<h2 class="languages__title">Languages</h2>
 				<div class="languages__wrapper">
@@ -186,7 +192,7 @@
 			</div>
 		</section>
 	
-		<section class="education light-style">
+		<section class="education light-style" id="education">
 			<div class="wrapper education__wrapper">
 				<h2 class="education__title">Education</h2>
 				<p class="education__text">Specialist degree <br> in Petro Tchaikovsky National Music Academy of Ukraine</p>
@@ -194,7 +200,7 @@
 			</div>
 		</section>
 	
-		<section class="courses dark-style">
+		<section class="courses dark-style" id="courses">
 			<div class="wrapper courses__wrapper">
 				<h2 class="courses__title">Courses</h2>
 				<ul class="courses-list">
@@ -207,7 +213,7 @@
 			</div>
 		</section>
 	
-		<section class="experience light-style">
+		<section class="experience light-style" id="experience">
 			<div class="wrapper experience__wrapper">
 				<h2 class="experience__title">Professional Experience</h2>
 				<h5 class="experience__subtitle">graphic design assistant in publishing house "ColorGraf"</h5>
@@ -232,7 +238,7 @@
 			</div>
 		</section>
 	
-		<section class="projects dark-style">
+		<section class="projects dark-style" id="projects">
 			<div class="wrapper">
 				<h2 class="projects__title">Projects</h2>
 				<div class="projects__wrapper">
@@ -257,7 +263,7 @@
 						</div>
 						<div class="project-card">
 							<a href="#" target="_blank">
-								<img src="./assets/img/logoW-big.png" alt="project-card__image" class="project__image_circle">
+								<img src="./assets/img/projW.jpg" alt="project-card__image" class="project__image">
 							</a>				
 							<div class="project-card__content">
 								<h6 class="project-card__description">the first try in HTML/CSS after a month of on-line studying using flexboxes</h6>
@@ -309,7 +315,7 @@
 			</div>
 		</section>
 	
-		<section class="examples light-style">
+		<section class="examples light-style" id="examples">
 			<div class="wrapper">
 				<h2 class="examples__title">Code examples</h2>
 				<div class="examples__wrapper">
@@ -333,16 +339,16 @@
 			</div>
 		</section>
 	
-		<section class="contacts dark-style"> 
+		<section class="contacts dark-style" id="contacts"> 
 			<div class="wrapper">
 				<h2 class="contacts__title">Contacts</h2>
 				<div class="contacts__wrapper">
 					<ul class="contacts-list">
 						<li class="contacts-list__item">
-							<a href="mailto:wwwolkodavvv@gmail.com" class="contacts-list__link">
+							<a href="mailto:makarenko_iuliia@mail.ru" class="contacts-list__link">
 								<img src="./assets/svg/mail.svg" alt="mail" class="ico contacts-ico">
 							</a>
-							<a href="mailto:wwwolkodavvv@gmail.com" class="contacts-list__link">wwwolkodavvv@gmail.com</a>
+							<a href="mailto:makarenko_iuliia@mail.ru" class="contacts-list__link">makarenko_iuliia@mail.ru</a>
 						</li>
 						<li class="contacts-list__item">
 							<a href="tel:+48537187966" class="contacts-list__link">
@@ -373,13 +379,13 @@
 		<div class="wrapper">
 			<nav class="footer__navigation">
 				<ul class="footer-navigation__list">
-					<li class="footer-navigation__link"><a href="#">Skills</a></li>
-					<li class="footer-navigation__link"><a href="#">Languages</a></li>
-					<li class="footer-navigation__link"><a href="#">Education</a></li>
-					<li class="footer-navigation__link"><a href="#">Courses</a></li>
-					<li class="footer-navigation__link"><a href="#">Experience</a></li>
-					<li class="footer-navigation__link"><a href="#">Projects</a></li>
-					<li class="footer-navigation__link"><a href="#">Contacts</a></li>
+					<li class="footer-navigation__link"><a href="#skills">Skills</a></li>
+					<li class="footer-navigation__link"><a href="#languages">Languages</a></li>
+					<li class="footer-navigation__link"><a href="#education">Education</a></li>
+					<li class="footer-navigation__link"><a href="#courses">Courses</a></li>
+					<li class="footer-navigation__link"><a href="#experience">Experience</a></li>
+					<li class="footer-navigation__link"><a href="#projects">Projects</a></li>
+					<li class="footer-navigation__link"><a href="#contacts">Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -393,6 +399,8 @@
 			</a>
 		</div>
 	</footer>
+
+	<script src="./js/header-menu.js"></script>
 
 </body>
 </html>

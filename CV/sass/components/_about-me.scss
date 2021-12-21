@@ -24,6 +24,7 @@
 		color: $color-primary-light;
 		padding-top: 140px;
 		text-align: center;
+		padding-bottom: 60px;
 
 		@include media-laptop {
 			padding-top: 120px;
@@ -72,6 +73,8 @@
 		}
 	}
 }
+
+
 
 .about-me-contacts {
 	display: flex;

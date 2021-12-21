@@ -1,21 +1,72 @@
 .header-navigation {
+	@include media-laptop {
+		display: none;
+	}
+	
 	&__list {
 		display: flex;
 		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
-
 		@include media-laptop {
-			display: none;
+			flex-direction: column;
+			@include font($size: 3rem, $weight: 300, $height: 5rem, $space: 0.2rem);
+			position: fixed;
+			margin-top: 185px;
+			margin-left: 20px;
+			top: 0;
+			left: 0;
+			background-color: cadetblue;
+			width: 30%;
 		}
 	}
 
 	&__link {
 		color: $color-primary-light;
 		padding-left: 28px;
+		@include media-laptop {
+			padding-left: 0;
+		}
 
 		&:hover {
 			color: $color-additional;
 		}
+		@include media-laptop {
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				background-image: url(../../assets/svg/arrow.svg);
+				background-repeat: no-repeat;
+				height: 15px;
+				width: 26px;
+				transform: translate(0, 140%) rotate(90deg);
+			}
+		}
 	}
 }
 
+.header__navigation_mobile {
+	visibility: hidden;
+	transition: 0.3s all linear;
+}
+
+// ._active {
+// 	display: block;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 50%;
+// 	height: 100%;
+// 	margin-top: 85px;
+// 	padding-top: 50px;
+// 	transition: left 0.3s ease-in-out;
+// 	overflow: auto;
+// }
+
+// .header__navigation_mobile {
+// 	@include media-laptop {
+// 		left: 0;
+// 	}
+// }
 
