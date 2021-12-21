@@ -2,7 +2,7 @@ let humburger = document.querySelector('.humburger');
 let navMobile = document.querySelector('.header__navigation_mobile');
 let back = document.querySelector('body');
 let navList = document.querySelector('.header-navigation__list');
-// let links = document.querySelector('.header-navigation__link');
+let links = document.querySelector('.header-navigation__link');
 let aboutContent = document.querySelector('.about-me__content');
 let overlay = document.querySelector('.about-me');
 
