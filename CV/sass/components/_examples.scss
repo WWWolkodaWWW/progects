@@ -5,3 +5,13 @@
 		padding-top: 30px;
 	}
 }
+
+code {
+	@include media-tablet {
+		font-size: 1.5rem;
+	}
+	
+	@include media-mobile-small-width {
+		font-size: 0.9rem;
+	}
+}

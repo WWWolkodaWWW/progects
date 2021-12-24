@@ -59,7 +59,7 @@ h3 {
 	}
 
 	@include media-tablet {
-		@include font($size: 6rem, $weight: 500);
+		@include font($size: 5rem, $weight: 500);
 	}
 
 	@include media-mobile-big-width {
@@ -76,7 +76,7 @@ h4 {
 	}
 
 	@include media-tablet {
-		@include font($size: 6rem, $weight: 500);
+		@include font($size: 5rem, $weight: 500);
 	}
 
 	@include media-mobile-big-width {

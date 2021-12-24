@@ -14,8 +14,27 @@
 			margin-left: 20px;
 			top: 0;
 			left: 0;
-			background-color: cadetblue;
+			background-color: $color-primary;
 			width: 30%;
+		}
+		@include media-tablet {
+			@include font($size: 4rem, $weight: 300, $height: 6rem, $space: 0.2rem);
+			margin-top: 130px;
+			margin-left: 0;
+			padding: 100px 70px 75px;
+			top: 0;
+			left: 0;
+			background-image: url(../../assets/img/eyes_transparency.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			background-blend-mode: color-dodge;
+			width: 100%;
+		}
+		@include media-mobile-big-width {
+			@include font($size: 3.2rem, $weight: 300, $height: 6rem, $space: 0.2rem);
+			padding: 100px 50px 70px;
+			
 		}
 	}
 

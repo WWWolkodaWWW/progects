@@ -10,7 +10,7 @@ function burgerMenu(selector) {
 	humburger.addEventListener("click", (e) => {
 		e.preventDefault();
 		animateBurger();
-		hideContent()
+		hideContent();
 		showNavigation();
 		hideNavigation();
 	});
@@ -38,12 +38,24 @@ function burgerMenu(selector) {
 		}
 	}
 
-	// function hideNavigation() { 
-	// 	overlay.addEventListener("click", () => {
-	// 		navMobile.style.visibility = "hidden";
-	// 		hideContent();
-	// 	});
+	// function showNavigation() { 
+	// 	if (navMobile.classList.contains('._active')) {
+	// 		overlay.addEventListener("click", () => { 
+	// 			navMobile.classList.remove('._active');
+	// 		})
+	// 	} else { 
+	// 		navMobile.style.visibility = "visible";
+	// 	}
 	// }
+
+	
+
+	function hideNavigation() { 
+		overlay.addEventListener("click", () => {
+			navMobile.style.visibility = "hidden";
+			// hideContent();
+		});
+	}
 }
 
 burgerMenu();

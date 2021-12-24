@@ -7,6 +7,7 @@
 	<link rel="icon" type="image/x-icon" href="./assets/svg/favicon.ico">
 	<title>CV_Makarenko_Iuliia</title>
 	<link rel="stylesheet" href="./sass/style.css">
+	<link rel="stylesheet" href="./libs/highlight/styles/atom-one-dark.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -319,22 +320,22 @@
 			<div class="wrapper">
 				<h2 class="examples__title">Code examples</h2>
 				<div class="examples__wrapper">
-<!-- <pre>
-	<code>
-		function highAndLow(numbers){
-			let arr = numbers.split(' ')
-			let lowNumber = +arr[0]
-			let highNumber = +arr[0]
-			for(let i of arr){
-				if(+i < lowNumber) lowNumber = +i    
-				console.log(lowNumber)    
-				if(+i > highNumber) highNumber = +i    
-				console.log(highNumber)
-			}  
-		return `${highNumber} ${lowNumber}`
-	}
-	</code>
-</pre> -->
+<pre>
+<code>
+function highAndLow(numbers){
+	let arr = numbers.split(' ')
+	let lowNumber = +arr[0]
+	let highNumber = +arr[0]
+	for(let i of arr){
+		if(+i &lt; lowNumber) lowNumber = +i    
+		console.log(lowNumber)    
+		if(+i > highNumber) highNumber = +i    
+		console.log(highNumber)
+	}  
+return `${highNumber} ${lowNumber}`
+}	
+</code>
+</pre>
 				</div>
 			</div>
 		</section>
@@ -401,6 +402,8 @@
 	</footer>
 
 	<script src="./js/header-menu.js"></script>
+	<script src="./libs/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 
 </body>
 </html>
