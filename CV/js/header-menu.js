@@ -8,22 +8,15 @@ let overlay = document.querySelector('.about-me');
 
 function burgerMenu(selector) { 
 	humburger.addEventListener("click", (e) => {
+		humburger.classList.toggle('_active');
 		e.preventDefault();
-		animateBurger();
 		hideContent();
 		showNavigation();
-		hideNavigation();
 	});
 
-	function animateBurger() { 
-		humburger.addEventListener("click", () => {
-			humburger.classList.toggle('._active');
-		});		
-	}
-
 	function hideContent() { 
-		navMobile.classList.toggle('._active');
-		if (navMobile.classList.contains('._active')) {
+		navMobile.classList.toggle('_active');
+		if (navMobile.classList.contains('_active')) {
 			aboutContent.style.visibility = "hidden";
 		} else { 
 			aboutContent.style.visibility = "visible";
@@ -31,50 +24,18 @@ function burgerMenu(selector) {
 	}
 
 	function showNavigation() { 
-		if (navMobile.classList.contains('._active')) {
+		if (navMobile.classList.contains('_active')) {
 			navMobile.style.visibility = "visible";
 		} else { 
 			navMobile.style.visibility = "hidden";
 		}
 	}
-
-	// function showNavigation() { 
-	// 	if (navMobile.classList.contains('._active')) {
-	// 		overlay.addEventListener("click", () => { 
-	// 			navMobile.classList.remove('._active');
-	// 		})
-	// 	} else { 
-	// 		navMobile.style.visibility = "visible";
-	// 	}
-	// }
-
-	
-
-	function hideNavigation() { 
-		overlay.addEventListener("click", () => {
-			navMobile.style.visibility = "hidden";
-			// hideContent();
-		});
-	}
 }
 
+window.addEventListener('scroll', function() {
+	navMobile.style.visibility = "hidden";
+	aboutContent.style.visibility = "visible";
+	humburger.classList.toggle('_active');
+});
+
 burgerMenu();
-
-
-
-
-// [].forEach.call(links, function (el) {
-// 	el.addEventListener("click", () => hideMenu());
-// });
-
-// humburger.onclick = function () { 
-// 	humburger.classList.toggle('._active');
-// 	navMobile.classList.toggle('._active');
-// 	back.classList.toggle('._lock');
-// }
-
-// navList.onclick = function () { 
-// 	navList.classList.remove('._active');
-// 	back.classList.toggle('._lock');
-// }
-

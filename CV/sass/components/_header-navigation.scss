@@ -16,6 +16,7 @@
 			left: 0;
 			background-color: $color-primary;
 			width: 30%;
+			z-index: 5;
 		}
 		@include media-tablet {
 			@include font($size: 4rem, $weight: 300, $height: 6rem, $space: 0.2rem);
